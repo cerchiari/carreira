@@ -1,0 +1,67 @@
+<div class="page-header">
+  <h1>Editing Oficina #<%= @oficina.id %></h1>
+</div>
+
+<%= form_tag(oficina_url(@oficina), method: 'patch', class: 'form-horizontal') do %>
+  <div class="form-group">
+    <%= label_tag :categoria, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_field_tag :categoria, @oficina.categoria, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :item, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_field_tag :item, @oficina.item, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :resumo, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_area_tag :resumo, @oficina.resumo, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :publicoalvo, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_area_tag :publicoalvo, @oficina.publicoalvo, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :descricao, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_area_tag :descricao, @oficina.descricao, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :aprendizagem, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_area_tag :aprendizagem, @oficina.aprendizagem, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :duracao, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_field_tag :duracao, @oficina.duracao, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :preco, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_field_tag :preco, @oficina.preco, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-6">
+      <%= submit_tag "Update Oficina", class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>

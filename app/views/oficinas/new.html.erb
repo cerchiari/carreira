@@ -1,0 +1,67 @@
+<div class="page-header">
+  <h1>New Oficina</h1>
+</div>
+
+<%= form_tag(oficinas_url, method: 'post', class: 'form-horizontal') do %>
+  <div class="form-group">
+    <%= label_tag :categoria, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_field_tag :categoria, nil, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :item, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_field_tag :item, nil, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :resumo, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_area_tag :resumo, nil, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :publicoalvo, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_area_tag :publicoalvo, nil, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :descricao, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_area_tag :descricao, nil, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :aprendizagem, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_area_tag :aprendizagem, nil, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :duracao, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_field_tag :duracao, nil, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :preco, nil, class: 'col-md-2 control-label' %>
+    <div class="col-md-6">
+      <%= text_field_tag :preco, nil, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-6">
+      <%= submit_tag "Create Oficina", class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>
